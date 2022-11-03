@@ -10,7 +10,15 @@
 import SwiftUI
 
 struct HomeScreen: View {
+    @EnvironmentObject var viewModel: AppViewModel
+    
     var body: some View {
+        Button {
+            viewModel.signOut()
+        } label: {
+            Image(systemName: "arrow.up.left")
+                .foregroundColor(Color.red)
+        }
         Text("Home Screen")
     }
 }
