@@ -9,6 +9,7 @@
 
 import SwiftUI
 
+//This is Jordan testing whether he can push; will get rid of later
 struct HomeScreen: View {
     @EnvironmentObject var viewModel: AppViewModel
     
