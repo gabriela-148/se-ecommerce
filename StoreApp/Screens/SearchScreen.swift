@@ -1,16 +1,14 @@
 //
-//  HomeScreen.swift
+//  SearchScreen.swift
 //  StoreApp
 //
-//  UI for the HomeScreen
-// 
-//  Created by Gabriella Huegel on 10/29/22.
+//  Created by Gabriella Huegel on 11/10/22.
 //
 
 import SwiftUI
 
-struct HomeScreen: View {
-    @EnvironmentObject var viewModel : AppViewModel
+struct SearchScreen: View {
+    @EnvironmentObject var viewModel: AppViewModel
     
     let screenName: String
     var body: some View {
@@ -20,12 +18,12 @@ struct HomeScreen: View {
             }
         }
         .navigationBarTitle(screenName)
-                
+
     }
 }
 
-struct HomeScreen_Previews: PreviewProvider {
+struct SearchScreen_Previews: PreviewProvider {
     static var previews: some View {
-        HomeScreen(screenName: "Home")
+        SearchScreen(screenName: "Screen")
     }
 }
