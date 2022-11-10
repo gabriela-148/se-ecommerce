@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E0D9516291DA0DD00D4A988 /* CategoriesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0D9515291DA0DD00D4A988 /* CategoriesScreen.swift */; };
+		1E0D9518291DA0E500D4A988 /* SearchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0D9517291DA0E500D4A988 /* SearchScreen.swift */; };
+		1E0D951A291DA0ED00D4A988 /* AccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0D9519291DA0ED00D4A988 /* AccountScreen.swift */; };
+		1E0D951C291DA0F900D4A988 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0D951B291DA0F900D4A988 /* User.swift */; };
 		1E8E8A2C290DB84600AD6925 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E8E8A2B290DB84600AD6925 /* GoogleService-Info.plist */; };
 		1EAC4703290B307B002BD5DC /* StoreAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAC4702290B307B002BD5DC /* StoreAppApp.swift */; };
 		1EAC4705290B307B002BD5DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAC4704290B307B002BD5DC /* ContentView.swift */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E0D9515291DA0DD00D4A988 /* CategoriesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesScreen.swift; sourceTree = "<group>"; };
+		1E0D9517291DA0E500D4A988 /* SearchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreen.swift; sourceTree = "<group>"; };
+		1E0D9519291DA0ED00D4A988 /* AccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountScreen.swift; sourceTree = "<group>"; };
+		1E0D951B291DA0F900D4A988 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1E8E8A2B290DB84600AD6925 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1EAC46FF290B307B002BD5DC /* StoreApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EAC4702290B307B002BD5DC /* StoreAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreAppApp.swift; sourceTree = "<group>"; };
@@ -90,6 +98,7 @@
 				1E8E8A2B290DB84600AD6925 /* GoogleService-Info.plist */,
 				1EAC4706290B307E002BD5DC /* Assets.xcassets */,
 				1EAC4708290B307E002BD5DC /* Preview Content */,
+				1E0D951B291DA0F900D4A988 /* User.swift */,
 			);
 			path = StoreApp;
 			sourceTree = "<group>";
@@ -106,6 +115,9 @@
 			isa = PBXGroup;
 			children = (
 				1EDD3E1B290DC14A00253AF7 /* HomeScreen.swift */,
+				1E0D9515291DA0DD00D4A988 /* CategoriesScreen.swift */,
+				1E0D9517291DA0E500D4A988 /* SearchScreen.swift */,
+				1E0D9519291DA0ED00D4A988 /* AccountScreen.swift */,
 				1EDD3E1D290DC16D00253AF7 /* SignInScreen.swift */,
 				1EDD3E21290DC20300253AF7 /* SignUpScreen.swift */,
 			);
@@ -237,8 +249,12 @@
 				1EDD3E22290DC20300253AF7 /* SignUpScreen.swift in Sources */,
 				1EAC4705290B307B002BD5DC /* ContentView.swift in Sources */,
 				1EDD3E1E290DC16D00253AF7 /* SignInScreen.swift in Sources */,
+				1E0D951A291DA0ED00D4A988 /* AccountScreen.swift in Sources */,
+				1E0D9518291DA0E500D4A988 /* SearchScreen.swift in Sources */,
+				1E0D951C291DA0F900D4A988 /* User.swift in Sources */,
 				1EAC4703290B307B002BD5DC /* StoreAppApp.swift in Sources */,
 				1EDD3E1C290DC14A00253AF7 /* HomeScreen.swift in Sources */,
+				1E0D9516291DA0DD00D4A988 /* CategoriesScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
