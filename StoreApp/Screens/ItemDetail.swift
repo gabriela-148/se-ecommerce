@@ -11,25 +11,30 @@ struct ItemDetail: View {
     let itemDetail: Item
     
     var body: some View {
-        HStack {
+        NavigationView {
             VStack {
-               Text(itemDetail.name)
-                    .font(.headline)
-                    .fontWeight(.black)
-                    .padding()
-                Image(itemDetail.mainImage)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                Text("$\(itemDetail.price)")
-                    .fontWeight(.black)
+                VStack {
+                   //Text(itemDetail.name)
+                      //  .font(.headline)
+                      //  .fontWeight(.black)
+                      //  .padding()
+                    Image(itemDetail.mainImage)
+                        .resizable()
+                        .scaledToFit()
+                    Text("$\(itemDetail.price)")
+                        .fontWeight(.black)
+                    Spacer()
                 }
-            VStack {
-                Text(itemDetail.description)
-                Text(itemDetail.size)
+                VStack {
+                    Text(itemDetail.description)
+                        .padding()
+                    Text(itemDetail.size)
+                    Spacer()
+                }
             }
+            .navigationTitle(itemDetail.name)
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .navigationTitle(itemDetail.name)
-        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
