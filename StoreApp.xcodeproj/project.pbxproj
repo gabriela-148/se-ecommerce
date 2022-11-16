@@ -18,7 +18,10 @@
 		4D4D5BF8EE8B455DF9C83A58 /* Pods_StoreApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCC5EDF604F3669D3860A29 /* Pods_StoreApp.framework */; };
 		D00AABF6291C729800D6F129 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00AABF5291C727000D6F129 /* Item.swift */; };
 		D00AAC14291C831700D6F129 /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00AABF7291C7DC100D6F129 /* ItemDetail.swift */; };
-		D00AAC1C291EF9F200D6F129 /* CategoryItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00AAC1B291EF9EE00D6F129 /* CategoryItems.swift */; };
+		D00AAC1C291EF9F200D6F129 /* ShortsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00AAC1B291EF9EE00D6F129 /* ShortsCategory.swift */; };
+		D0A92ED72925316D005F1530 /* ShirtsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A92ED62925316D005F1530 /* ShirtsCategory.swift */; };
+		D0A92ED9292531A8005F1530 /* ShoesCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A92ED8292531A8005F1530 /* ShoesCategory.swift */; };
+		D0A92EDB292531CB005F1530 /* PantsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A92EDA292531CB005F1530 /* PantsCategory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +39,10 @@
 		D00AABF0291C288300D6F129 /* StoreApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D00AABF5291C727000D6F129 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		D00AABF7291C7DC100D6F129 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
-		D00AAC1B291EF9EE00D6F129 /* CategoryItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItems.swift; sourceTree = "<group>"; };
+		D00AAC1B291EF9EE00D6F129 /* ShortsCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortsCategory.swift; sourceTree = "<group>"; };
+		D0A92ED62925316D005F1530 /* ShirtsCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShirtsCategory.swift; sourceTree = "<group>"; };
+		D0A92ED8292531A8005F1530 /* ShoesCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesCategory.swift; sourceTree = "<group>"; };
+		D0A92EDA292531CB005F1530 /* PantsCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantsCategory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +114,10 @@
 				1EDD3E1D290DC16D00253AF7 /* SignInScreen.swift */,
 				1EDD3E21290DC20300253AF7 /* SignUpScreen.swift */,
 				D00AABF7291C7DC100D6F129 /* ItemDetail.swift */,
-				D00AAC1B291EF9EE00D6F129 /* CategoryItems.swift */,
+				D00AAC1B291EF9EE00D6F129 /* ShortsCategory.swift */,
+				D0A92ED62925316D005F1530 /* ShirtsCategory.swift */,
+				D0A92ED8292531A8005F1530 /* ShoesCategory.swift */,
+				D0A92EDA292531CB005F1530 /* PantsCategory.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -237,11 +246,14 @@
 			files = (
 				D00AAC14291C831700D6F129 /* ItemDetail.swift in Sources */,
 				1EDD3E22290DC20300253AF7 /* SignUpScreen.swift in Sources */,
+				D0A92EDB292531CB005F1530 /* PantsCategory.swift in Sources */,
 				1EAC4705290B307B002BD5DC /* ContentView.swift in Sources */,
+				D0A92ED72925316D005F1530 /* ShirtsCategory.swift in Sources */,
+				D0A92ED9292531A8005F1530 /* ShoesCategory.swift in Sources */,
 				1EDD3E1E290DC16D00253AF7 /* SignInScreen.swift in Sources */,
 				1EAC4703290B307B002BD5DC /* StoreAppApp.swift in Sources */,
 				D00AABF6291C729800D6F129 /* Item.swift in Sources */,
-				D00AAC1C291EF9F200D6F129 /* CategoryItems.swift in Sources */,
+				D00AAC1C291EF9F200D6F129 /* ShortsCategory.swift in Sources */,
 				1EDD3E1C290DC14A00253AF7 /* HomeScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

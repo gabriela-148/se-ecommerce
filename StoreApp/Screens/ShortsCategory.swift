@@ -7,30 +7,31 @@
 
 import SwiftUI
 
-struct CategoryItems: View {
-    var item: Item
+struct ShortsCategory: View {
+    let short: Item
     var body: some View {
         NavigationView {
             List {
-                ForEach(items) {_item in
-                    NavigationLink(destination: ItemDetail(itemDetail: item)) {
+                ForEach(shorts) {short in
+                    NavigationLink(destination: ItemDetail(itemDetail: short)) {
                         VStack {
-                            Image(item.mainImage)
+                            Image(short.mainImage)
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                            Text(item.name)
-                            Text("$\(item.price)")
+                            Text(short.name)
+                            Text("$\(short.price)")
                         }
                     }
                 }
             }
-        .navigationTitle("Clothes")
+            .navigationTitle("Shorts")
         }
+    
     }
 }
 
-struct CategoryItems_Previews: PreviewProvider {
+struct ShortsCategory_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryItems(item: Item.example)
+        ShortsCategory(short: Item.example)
     }
 }
