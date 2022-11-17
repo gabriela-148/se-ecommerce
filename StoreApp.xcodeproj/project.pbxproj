@@ -20,6 +20,12 @@
 		1EDD3E1E290DC16D00253AF7 /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD3E1D290DC16D00253AF7 /* SignInScreen.swift */; };
 		1EDD3E22290DC20300253AF7 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD3E21290DC20300253AF7 /* SignUpScreen.swift */; };
 		4D4D5BF8EE8B455DF9C83A58 /* Pods_StoreApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCC5EDF604F3669D3860A29 /* Pods_StoreApp.framework */; };
+		D00AABF6291C729800D6F129 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00AABF5291C727000D6F129 /* Item.swift */; };
+		D00AAC14291C831700D6F129 /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00AABF7291C7DC100D6F129 /* ItemDetail.swift */; };
+		D00AAC1C291EF9F200D6F129 /* ShortsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00AAC1B291EF9EE00D6F129 /* ShortsCategory.swift */; };
+		D0A92ED72925316D005F1530 /* ShirtsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A92ED62925316D005F1530 /* ShirtsCategory.swift */; };
+		D0A92ED9292531A8005F1530 /* ShoesCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A92ED8292531A8005F1530 /* ShoesCategory.swift */; };
+		D0A92EDB292531CB005F1530 /* PantsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A92EDA292531CB005F1530 /* PantsCategory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +34,6 @@
 		1E0D9519291DA0ED00D4A988 /* AccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountScreen.swift; sourceTree = "<group>"; };
 		1E0D951B291DA0F900D4A988 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1E8E8A2B290DB84600AD6925 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		1EAC46FF290B307B002BD5DC /* StoreApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EAC4702290B307B002BD5DC /* StoreAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreAppApp.swift; sourceTree = "<group>"; };
 		1EAC4704290B307B002BD5DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1EAC4706290B307E002BD5DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +44,13 @@
 		1FCC5EDF604F3669D3860A29 /* Pods_StoreApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoreApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F29BC48B9866F87A6E0FA4 /* Pods-StoreApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreApp.release.xcconfig"; path = "Target Support Files/Pods-StoreApp/Pods-StoreApp.release.xcconfig"; sourceTree = "<group>"; };
 		8A8B34BDD00254D9F6C8D953 /* Pods-StoreApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreApp.debug.xcconfig"; path = "Target Support Files/Pods-StoreApp/Pods-StoreApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D00AABF0291C288300D6F129 /* StoreApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00AABF5291C727000D6F129 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		D00AABF7291C7DC100D6F129 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
+		D00AAC1B291EF9EE00D6F129 /* ShortsCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortsCategory.swift; sourceTree = "<group>"; };
+		D0A92ED62925316D005F1530 /* ShirtsCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShirtsCategory.swift; sourceTree = "<group>"; };
+		D0A92ED8292531A8005F1530 /* ShoesCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesCategory.swift; sourceTree = "<group>"; };
+		D0A92EDA292531CB005F1530 /* PantsCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantsCategory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,18 +86,10 @@
 			isa = PBXGroup;
 			children = (
 				1EAC4701290B307B002BD5DC /* StoreApp */,
-				1EAC4700290B307B002BD5DC /* Products */,
 				0D396315589FCC54B14270E4 /* Pods */,
 				1105637911BF514B4F1ED64F /* Frameworks */,
+				D00AABF0291C288300D6F129 /* StoreApp.app */,
 			);
-			sourceTree = "<group>";
-		};
-		1EAC4700290B307B002BD5DC /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1EAC46FF290B307B002BD5DC /* StoreApp.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		1EAC4701290B307B002BD5DC /* StoreApp */ = {
@@ -95,6 +99,7 @@
 				1EDD3E18290DC0F900253AF7 /* Screens */,
 				1EAC4702290B307B002BD5DC /* StoreAppApp.swift */,
 				1EAC4704290B307B002BD5DC /* ContentView.swift */,
+				D00AABF5291C727000D6F129 /* Item.swift */,
 				1E8E8A2B290DB84600AD6925 /* GoogleService-Info.plist */,
 				1EAC4706290B307E002BD5DC /* Assets.xcassets */,
 				1EAC4708290B307E002BD5DC /* Preview Content */,
@@ -120,6 +125,11 @@
 				1E0D9519291DA0ED00D4A988 /* AccountScreen.swift */,
 				1EDD3E1D290DC16D00253AF7 /* SignInScreen.swift */,
 				1EDD3E21290DC20300253AF7 /* SignUpScreen.swift */,
+				D00AABF7291C7DC100D6F129 /* ItemDetail.swift */,
+				D00AAC1B291EF9EE00D6F129 /* ShortsCategory.swift */,
+				D0A92ED62925316D005F1530 /* ShirtsCategory.swift */,
+				D0A92ED8292531A8005F1530 /* ShoesCategory.swift */,
+				D0A92EDA292531CB005F1530 /* PantsCategory.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -150,7 +160,7 @@
 			);
 			name = StoreApp;
 			productName = StoreApp;
-			productReference = 1EAC46FF290B307B002BD5DC /* StoreApp.app */;
+			productReference = D00AABF0291C288300D6F129 /* StoreApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -177,7 +187,7 @@
 				Base,
 			);
 			mainGroup = 1EAC46F6290B307B002BD5DC;
-			productRefGroup = 1EAC4700290B307B002BD5DC /* Products */;
+			productRefGroup = 1EAC46F6290B307B002BD5DC;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -246,13 +256,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D00AAC14291C831700D6F129 /* ItemDetail.swift in Sources */,
 				1EDD3E22290DC20300253AF7 /* SignUpScreen.swift in Sources */,
+				D0A92EDB292531CB005F1530 /* PantsCategory.swift in Sources */,
 				1EAC4705290B307B002BD5DC /* ContentView.swift in Sources */,
+				D0A92ED72925316D005F1530 /* ShirtsCategory.swift in Sources */,
+				D0A92ED9292531A8005F1530 /* ShoesCategory.swift in Sources */,
 				1EDD3E1E290DC16D00253AF7 /* SignInScreen.swift in Sources */,
 				1E0D951A291DA0ED00D4A988 /* AccountScreen.swift in Sources */,
 				1E0D9518291DA0E500D4A988 /* SearchScreen.swift in Sources */,
 				1E0D951C291DA0F900D4A988 /* User.swift in Sources */,
 				1EAC4703290B307B002BD5DC /* StoreAppApp.swift in Sources */,
+				D00AABF6291C729800D6F129 /* Item.swift in Sources */,
+				D00AAC1C291EF9F200D6F129 /* ShortsCategory.swift in Sources */,
 				1EDD3E1C290DC14A00253AF7 /* HomeScreen.swift in Sources */,
 				1E0D9516291DA0DD00D4A988 /* CategoriesScreen.swift in Sources */,
 			);
@@ -394,6 +410,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -424,6 +441,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
