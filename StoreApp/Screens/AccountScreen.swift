@@ -11,78 +11,83 @@ import FirebaseFirestore
 import Firebase
 import FirebaseCore
 
-class AccountViewModel: ObservableObject {
-    @Published var errorMessage = ""
-    @Published var currUser: User?
-    
-    //var auth = Auth.auth()
-    
-    init() {
-        fetchCurrentUser()
-    }
-    
-    private func fetchCurrentUser() {
-        
-        let db = Firestore.firestore()
-        
-        guard let uid =
-                Auth.auth().currentUser?.uid else {
-                    self.errorMessage = "Could not find uid"
-                    return
-                    
-                }
-                
-        db.collection("users").document(uid).getDocument { snapshot, error in
-                if let error = error {
-                    self.errorMessage = "Failed to fetch current user: \(error)"
-                    return
-                }
-                
-            guard let data = snapshot?.data() else {
-                self.errorMessage = "no data found"
-                return
-            }
-               
-                
-                let uid = data["uid"] as? String ?? ""
-                let name = data["firstName"] as? String ?? ""
-                self.currUser = User(id: uid, name: name)
-                
-                
-            }
-    }
-}
 struct AccountScreen: View {
+    // Access to Firebase methods
     @EnvironmentObject var viewModel: AppViewModel
-    @ObservedObject private var vm = AccountViewModel()
+
+    @State private var isPrivate: Bool = true
+    @State private var notifsEnable: Bool = false
+    @State private var showAlert = true
     
-    // get user information in either this screen/hoome/content view then pass information into screen
-    // where it is needed
+    @State private var previewIndex = 0
+    var previewOptions = ["Always", "When Unlocked", "Never"]
     
-    let screenName: String
+    var userEmail = Auth.auth().currentUser?.email
+    
     var body: some View {
-        NavigationView {
-            VStack {
-                Text(screenName)
-                Text(vm.currUser?.name ?? "\(vm.errorMessage)")
-                Button {
-                    viewModel.signOut()
-                } label: {
-                    Text("Sign Out")
-                        .foregroundColor(Color.white)
-                        .frame(width: 200, height: 50)
-                        .background(Color.red)
-                        .cornerRadius(10)
+        Form {
+            
+            // Displays User information
+            Section(header: Text("Email")) {
+                HStack {
+                    Image(systemName: "mail")
+                        .frame(width: 25, height: 25)
+                        .foregroundColor(.white)
+                        .background(Color.blue)
+                        .clipShape(RoundedRectangle(cornerRadius: 5))
+                    Text(userEmail ?? "example@gmail.com")
                 }
+                // takes user to screen to update email
+                // does not function properly yet
+                NavigationLink(destination: UpdateEmail().environmentObject(viewModel)) {
+                    Text("Update Email")
+                        .foregroundColor(Color.blue)
+                }
+                // takes user to screen to update password
+                NavigationLink(destination: UpdatePassword().environmentObject(viewModel)) {
+                    Text("Update Password")
+                        .foregroundColor(Color.blue)
+                }
+                
+            }// first section
+            
+            // Displays user's payment info
+            Section(header: Text("Payment Info")) {
+                HStack {
+                    Image(systemName: "creditcard.circle.fill")
+                        .frame(width: 25, height: 25)
+                        .foregroundColor(.white)
+                        .background(Color.blue)
+                        .clipShape(RoundedRectangle(cornerRadius: 5))
+                    Text("Card Info")
+                }
+            }// second section
+            
+            Section(header: Text("Notifications")) {
+                Toggle(isOn: $notifsEnable) {
+                    Text("Enabled")
+                }
+                Picker(selection: $previewIndex, label: Text("Show Previews")) {
+                    ForEach(0..<previewOptions.count) {
+                        Text(self.previewOptions[$0])
+                    }
+                }
+            }// third section
+            
+            // sign out button
+            Button {
+                viewModel.signOut()
+            } label: {
+                Text("Sign Out")
+                    .foregroundColor(Color.red)
             }
-        }
-        .navigationBarTitle(screenName)
-    }
+        }// form
+    }// body
     
 }
 
 struct AccountScreen_Previews: PreviewProvider {
     static var previews: some View {
-        AccountScreen(screenName: "Screen")
+        AccountScreen()
     }
 }

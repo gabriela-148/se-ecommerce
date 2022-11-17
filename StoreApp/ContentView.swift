@@ -71,6 +71,18 @@ class AppViewModel: ObservableObject {
         self.signedIn = false
     }
     
+    func changePass(password: String) {
+        auth.currentUser?.updatePassword(to: password) { error in
+          return
+        }
+    }
+    
+    func changeEmail(email: String) {
+        auth.currentUser?.updateEmail(to: email) { error in
+            return
+        }
+    }
+    
 }
 
 struct ContentView: View {
@@ -93,7 +105,7 @@ struct ContentView: View {
                         .tabItem {
                             Label("Categories", systemImage: "list.bullet")
                         }
-                    AccountScreen(screenName: "Account")
+                    AccountScreen()
                         .tabItem {
                             Label("Account", systemImage: "person.fill")
                         }
