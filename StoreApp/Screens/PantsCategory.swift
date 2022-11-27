@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct PantsCategory: View {
+    //test git commit
     let pant: Item
     var body: some View {
         NavigationView {
