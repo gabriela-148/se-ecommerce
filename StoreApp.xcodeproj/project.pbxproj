@@ -28,6 +28,7 @@
 		D0A92ED72925316D005F1530 /* ShirtsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A92ED62925316D005F1530 /* ShirtsCategory.swift */; };
 		D0A92ED9292531A8005F1530 /* ShoesCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A92ED8292531A8005F1530 /* ShoesCategory.swift */; };
 		D0A92EDB292531CB005F1530 /* PantsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A92EDA292531CB005F1530 /* PantsCategory.swift */; };
+		D0D1494C2943B7D60048F7BA /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D1494B2943B7D60048F7BA /* OrderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		D0A92ED62925316D005F1530 /* ShirtsCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShirtsCategory.swift; sourceTree = "<group>"; };
 		D0A92ED8292531A8005F1530 /* ShoesCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesCategory.swift; sourceTree = "<group>"; };
 		D0A92EDA292531CB005F1530 /* PantsCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantsCategory.swift; sourceTree = "<group>"; };
+		D0D1494B2943B7D60048F7BA /* OrderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				D0A92ED62925316D005F1530 /* ShirtsCategory.swift */,
 				D0A92ED8292531A8005F1530 /* ShoesCategory.swift */,
 				D0A92EDA292531CB005F1530 /* PantsCategory.swift */,
+				D0D1494B2943B7D60048F7BA /* OrderView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				1EAC4703290B307B002BD5DC /* StoreAppApp.swift in Sources */,
 				D00AABF6291C729800D6F129 /* Item.swift in Sources */,
 				D00AAC1C291EF9F200D6F129 /* ShortsCategory.swift in Sources */,
+				D0D1494C2943B7D60048F7BA /* OrderView.swift in Sources */,
 				1EDD3E1C290DC14A00253AF7 /* HomeScreen.swift in Sources */,
 				1E0D9516291DA0DD00D4A988 /* CategoriesScreen.swift in Sources */,
 			);

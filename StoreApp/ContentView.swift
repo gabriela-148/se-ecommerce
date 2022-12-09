@@ -15,6 +15,8 @@ import FirebaseFirestore
 
 
 class AppViewModel: ObservableObject {
+    //var for order
+    @Published var order = [Item]()
     
     let auth = Auth.auth()
     
@@ -83,6 +85,42 @@ class AppViewModel: ObservableObject {
         }
     }
     
+    //total price of order
+    var total: Int {
+        if order.count > 0 {
+            return order.reduce(0) { $0 + $1.price }
+        } else {
+            return 0
+        }
+    }
+    
+    //adds an item to an order
+    func add(item: Item) {
+        //viewModel.signedIn = true;
+        order.append(item)
+    }
+
+    //removes an item from an order
+    func remove(item: Item) {
+        if let index = order.firstIndex(of: item) {
+            //viewModel.signedIn = true;
+            order.remove(at: index)
+        }
+    }
+    
+    //saves an order to db
+    func saveOrder(customer: String, totalPrice: String, paymentType: String) {
+        let db = Firestore.firestore()
+        db.collection("orders").addDocument(data:["customer": customer, "totalPrice": totalPrice, "paymentType": paymentType]) { error in
+            if error == nil {
+                //No errors
+                print("No errors")
+            } else {
+                
+            }
+        }
+    }
+    
 }
 
 struct ContentView: View {
@@ -108,6 +146,11 @@ struct ContentView: View {
                     AccountScreen()
                         .tabItem {
                             Label("Account", systemImage: "person.fill")
+                        }
+                    
+                    OrderView()
+                        .tabItem {
+                            Label("Cart", systemImage: "cart.circle")
                         }
                 }
 
