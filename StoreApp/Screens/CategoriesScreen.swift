@@ -9,21 +9,39 @@ import SwiftUI
 
 struct CategoriesScreen: View {
     @EnvironmentObject var viewModel: AppViewModel
+    //@EnvironmentObject var order: Order
     
     let screenName: String
+    let item: Item
     var body: some View {
-        NavigationView {
+        //NavigationView {
             VStack {
-                Text(screenName)
+                NavigationLink(destination: ShoesCategory(shoe: item)){
+                    Text("Shoes")
+                }
+                .padding()
+                NavigationLink(destination: ShirtsCategory(shirt: item)){
+                    Text("Shirts")
+                }
+                .padding()
+                NavigationLink(destination: PantsCategory(pant: item)){
+                    Text("Pants")
+                }
+                .padding()
+                NavigationLink(destination: ShortsCategory(short: item)){
+                    Text("Shorts")
+                }
+                .padding()
             }
-            
+            .navigationTitle("Categories")
         }
-        .navigationBarTitle("Categories")
-    }
+    //}
 }
+
 
 struct CategoriesScreen_Previews: PreviewProvider {
     static var previews: some View {
-        CategoriesScreen(screenName: "Screen")
+        CategoriesScreen(screenName: "Screen", item: Item.example)
+    //.environmentObject(Order())
     }
 }
