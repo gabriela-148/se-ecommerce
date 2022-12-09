@@ -1,7 +1,7 @@
 //
 //  PantsCategory.swift
 //  StoreApp
-//
+//  displays all the pants sold by the store
 //  Created by lauren boyle on 11/16/22.
 //
 

@@ -1,7 +1,7 @@
 //
 //  CategoryItems.swift
 //  StoreApp
-//
+//  displays all the shorts sold by the store
 //  Created by lauren boyle on 11/11/22.
 //
 

@@ -1,7 +1,7 @@
 //
 //  ShoesCategory.swift
 //  StoreApp
-//
+//  displays all the shoes sold by the store
 //  Created by lauren boyle on 11/16/22.
 //
 
