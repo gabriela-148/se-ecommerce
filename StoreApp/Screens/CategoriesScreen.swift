@@ -9,26 +9,25 @@ import SwiftUI
 
 struct CategoriesScreen: View {
     @EnvironmentObject var viewModel: AppViewModel
-    //@EnvironmentObject var order: Order
     
     let screenName: String
     let item: Item
     var body: some View {
         //NavigationView {
             VStack {
-                NavigationLink(destination: ShoesCategory(shoe: item)){
+                NavigationLink(destination: ShoesCategory(shoe: item).environmentObject(viewModel)){
                     Text("Shoes")
                 }
                 .padding()
-                NavigationLink(destination: ShirtsCategory(shirt: item)){
+                NavigationLink(destination: ShirtsCategory(shirt: item).environmentObject(viewModel)){
                     Text("Shirts")
                 }
                 .padding()
-                NavigationLink(destination: PantsCategory(pant: item)){
+                NavigationLink(destination: PantsCategory(pant: item).environmentObject(viewModel)){
                     Text("Pants")
                 }
                 .padding()
-                NavigationLink(destination: ShortsCategory(short: item)){
+                NavigationLink(destination: ShortsCategory(short: item).environmentObject(viewModel)){
                     Text("Shorts")
                 }
                 .padding()

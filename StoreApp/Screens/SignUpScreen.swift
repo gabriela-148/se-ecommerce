@@ -30,6 +30,12 @@ struct SignUpScreen: View {
             
             VStack {
                 
+                Image("180")
+                    .frame(width: 350, height: 350, alignment: .center)
+                    .aspectRatio(contentMode: .fill)
+                    .cornerRadius(10)
+                    .padding()
+                
                 TextField("First Name", text: $firstName)
                     .disableAutocorrection(true)
                     .autocapitalization(.none)

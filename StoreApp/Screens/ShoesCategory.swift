@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ShoesCategory: View {
+    @EnvironmentObject var viewModel: AppViewModel
+    @ObservedObject var test = AppViewModel()
+    
     let shoe: Item
     var body: some View {
         NavigationView {

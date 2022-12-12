@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ShortsCategory: View {
+    @EnvironmentObject var viewModel: AppViewModel
+    @ObservedObject var test = AppViewModel()
+    
     let short: Item
     var body: some View {
         NavigationView {
