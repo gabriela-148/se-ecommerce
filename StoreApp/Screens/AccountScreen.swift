@@ -14,13 +14,7 @@ import FirebaseCore
 struct AccountScreen: View {
     // Access to Firebase methods
     @EnvironmentObject var viewModel: AppViewModel
-    @ObservedObject var test = AppViewModel()
-<<<<<<< HEAD
-    @ObservedObject var model = AppViewModel()
-=======
     @ObservedObject var model = ViewModel()
-    
->>>>>>> 00525518dd969d60c78be0dc43e35518eee51ff6
 
     @State private var isPrivate: Bool = true
     @State private var notifsEnable: Bool = false
@@ -60,18 +54,6 @@ struct AccountScreen: View {
                             Text(userEmail ?? "example@gmail.com")
                         }
 
-                        // Alert to change email
-                        Button {
-                            alertTF(title: "Change Email", message: "", hintText: "New Email", primaryTitle: "Confirm", secondaryTitle: "Cancel") { text in
-                                viewModel.changeEmail(email: text)
-                            } secondaryAction: {
-                                print("Cancelled")
-                            }
-
-                        } label: {
-                            Text("Update Email")
-                                .foregroundColor(Color.blue)
-                        }
                         // Alert to change password
                         Button {
                             alertTF(title: "Change Password", message: "", hintText: "New Password", primaryTitle: "Confirm", secondaryTitle: "Cancel") { text in
@@ -120,24 +102,13 @@ struct AccountScreen: View {
                 }// form
             }// v stack frist
         }// z stack
+    } // body
         
-
-        
-    }// body
-<<<<<<< HEAD
-}
-   
-struct AccountScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        AccountScreen()
-=======
-    
     init() {
         model.getData()
     }
     
-}// struct
-
+} // struct
 
 // Creates a new Alert with text fields
 extension View {
@@ -176,7 +147,6 @@ extension View {
         }
         
         return root
->>>>>>> 00525518dd969d60c78be0dc43e35518eee51ff6
     }
     
 }

@@ -18,8 +18,6 @@
 		1EAC4705290B307B002BD5DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAC4704290B307B002BD5DC /* ContentView.swift */; };
 		1EAC4707290B307E002BD5DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EAC4706290B307E002BD5DC /* Assets.xcassets */; };
 		1EAC470A290B307E002BD5DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EAC4709290B307E002BD5DC /* Preview Assets.xcassets */; };
-		1ED76ACE2926CDFC00CC8D6F /* UpdateEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED76ACD2926CDFC00CC8D6F /* UpdateEmail.swift */; };
-		1ED76AD02926CE0700CC8D6F /* UpdatePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED76ACF2926CE0700CC8D6F /* UpdatePassword.swift */; };
 		1EDD3E1C290DC14A00253AF7 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD3E1B290DC14A00253AF7 /* HomeScreen.swift */; };
 		1EDD3E1E290DC16D00253AF7 /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD3E1D290DC16D00253AF7 /* SignInScreen.swift */; };
 		1EDD3E22290DC20300253AF7 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD3E21290DC20300253AF7 /* SignUpScreen.swift */; };
@@ -46,8 +44,6 @@
 		1EAC4704290B307B002BD5DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1EAC4706290B307E002BD5DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EAC4709290B307E002BD5DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1ED76ACD2926CDFC00CC8D6F /* UpdateEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateEmail.swift; sourceTree = "<group>"; };
-		1ED76ACF2926CE0700CC8D6F /* UpdatePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePassword.swift; sourceTree = "<group>"; };
 		1EDD3E1B290DC14A00253AF7 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		1EDD3E1D290DC16D00253AF7 /* SignInScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreen.swift; sourceTree = "<group>"; };
 		1EDD3E21290DC20300253AF7 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
@@ -139,8 +135,6 @@
 				1E0D9519291DA0ED00D4A988 /* AccountScreen.swift */,
 				1EDD3E1D290DC16D00253AF7 /* SignInScreen.swift */,
 				1EDD3E21290DC20300253AF7 /* SignUpScreen.swift */,
-				1ED76ACD2926CDFC00CC8D6F /* UpdateEmail.swift */,
-				1ED76ACF2926CE0700CC8D6F /* UpdatePassword.swift */,
 				D00AABF7291C7DC100D6F129 /* ItemDetail.swift */,
 				D00AAC1B291EF9EE00D6F129 /* ShortsCategory.swift */,
 				D0A92ED62925316D005F1530 /* ShirtsCategory.swift */,
@@ -278,12 +272,10 @@
 				1EDD3E22290DC20300253AF7 /* SignUpScreen.swift in Sources */,
 				D0A92EDB292531CB005F1530 /* PantsCategory.swift in Sources */,
 				D0D1494E2943B8580048F7BA /* CheckoutView.swift in Sources */,
-				1ED76AD02926CE0700CC8D6F /* UpdatePassword.swift in Sources */,
 				1EAC4705290B307B002BD5DC /* ContentView.swift in Sources */,
 				D0A92ED72925316D005F1530 /* ShirtsCategory.swift in Sources */,
 				D0A92ED9292531A8005F1530 /* ShoesCategory.swift in Sources */,
 				1EDD3E1E290DC16D00253AF7 /* SignInScreen.swift in Sources */,
-				1ED76ACE2926CDFC00CC8D6F /* UpdateEmail.swift in Sources */,
 				1E0D951A291DA0ED00D4A988 /* AccountScreen.swift in Sources */,
 				1E0D9518291DA0E500D4A988 /* SearchScreen.swift in Sources */,
 				1E0D951C291DA0F900D4A988 /* User.swift in Sources */,
