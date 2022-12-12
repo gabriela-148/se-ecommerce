@@ -121,7 +121,13 @@ class AppViewModel: ObservableObject {
         }
     }
     
+    //delete all items after purchase
+    func deleteAll() {
+        order.removeAll()
+    }
 }
+
+    
 
 struct ContentView: View {
     @EnvironmentObject var viewModel: AppViewModel
@@ -139,7 +145,7 @@ struct ContentView: View {
                         .tabItem {
                             Label("Search", systemImage: "magnifyingglass")
                         }
-                    CategoriesScreen(screenName: "Categories")
+                    CategoriesScreen(screenName: "Categories", item: Item.example)
                         .tabItem {
                             Label("Categories", systemImage: "list.bullet")
                         }

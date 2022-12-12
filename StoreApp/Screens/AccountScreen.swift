@@ -14,6 +14,8 @@ import FirebaseCore
 struct AccountScreen: View {
     // Access to Firebase methods
     @EnvironmentObject var viewModel: AppViewModel
+    @ObservedObject var test = AppViewModel()
+    @ObservedObject var model = AppViewModel()
 
     @State private var isPrivate: Bool = true
     @State private var notifsEnable: Bool = false
@@ -83,9 +85,8 @@ struct AccountScreen: View {
             }
         }// form
     }// body
-    
 }
-
+   
 struct AccountScreen_Previews: PreviewProvider {
     static var previews: some View {
         AccountScreen()

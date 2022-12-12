@@ -45,7 +45,7 @@ struct CheckoutView: View {
                     }
                 }
             }
-            
+                
             Section(header: Text("TOTAL: \(totalPrice)")
                         .font(.largeTitle)
                         .fontWeight(.black)) {
@@ -68,12 +68,11 @@ struct CheckoutView: View {
         .navigationTitle("Payment")
         .navigationBarTitleDisplayMode(.inline)
         .alert(isPresented: $showingPaymentAlert) {
-            Alert(title: Text("Order Confirmed"), message: Text("Your total was \(totalPrice)"), dismissButton: .default(Text("OK")))
+            Alert(title: Text("Order Confirmed"), message: Text("Your total was \(totalPrice)"),    dismissButton: .default(Text("OK")))
         }
     }
-    
 }
-
+    
 struct CheckoutView_Previews: PreviewProvider {
     static var previews: some View {
         CheckoutView()

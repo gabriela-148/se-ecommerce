@@ -18,7 +18,7 @@ struct SearchBar: View {
     @Binding var searching: Bool
      
     var body: some View {
-        ZStack {
+         ZStack {
             Rectangle()
                 .foregroundColor(Color("Gray"))
             HStack {
@@ -86,7 +86,7 @@ struct SearchScreen: View {
         }
     }
 }
- 
+
 struct SearchScreen_Previews: PreviewProvider {
     static var previews: some View {
         SearchScreen()
