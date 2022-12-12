@@ -141,11 +141,15 @@ struct ContentView: View {
                         .tabItem {
                             Label("Home", systemImage: "house")
                         }
-                    SearchScreen(screenName: "Search")
+                    SearchScreen()
                         .tabItem {
                             Label("Search", systemImage: "magnifyingglass")
                         }
                     CategoriesScreen(screenName: "Categories", item: Item.example)
+<<<<<<< HEAD
+=======
+                        .environmentObject(viewModel)
+>>>>>>> 00525518dd969d60c78be0dc43e35518eee51ff6
                         .tabItem {
                             Label("Categories", systemImage: "list.bullet")
                         }

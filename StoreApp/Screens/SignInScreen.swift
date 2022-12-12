@@ -29,6 +29,12 @@ struct SignInView: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack {
+                    
+                    Image("180")
+                        .frame(width: 350, height: 350, alignment: .center)
+                        .aspectRatio(contentMode: .fill)
+                        .cornerRadius(10)
+                        .padding()
                                         
                     TextField("Email Address", text: $email)
                         .foregroundColor(Color.black)

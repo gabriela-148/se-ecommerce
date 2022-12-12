@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct PantsCategory: View {
+    @EnvironmentObject var viewModel: AppViewModel
+    @ObservedObject var test = AppViewModel()
+    
     //test git commit
     let pant: Item
     var body: some View {
