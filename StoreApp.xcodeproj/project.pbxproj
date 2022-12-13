@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		171B37BD29493D5100E609AB /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171B37BC29493D5100E609AB /* ItemViewModel.swift */; };
 		1E0D9516291DA0DD00D4A988 /* CategoriesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0D9515291DA0DD00D4A988 /* CategoriesScreen.swift */; };
 		1E0D9518291DA0E500D4A988 /* SearchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0D9517291DA0E500D4A988 /* SearchScreen.swift */; };
 		1E0D951A291DA0ED00D4A988 /* AccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0D9519291DA0ED00D4A988 /* AccountScreen.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		171B37BC29493D5100E609AB /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
 		1E0D9515291DA0DD00D4A988 /* CategoriesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesScreen.swift; sourceTree = "<group>"; };
 		1E0D9517291DA0E500D4A988 /* SearchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreen.swift; sourceTree = "<group>"; };
 		1E0D9519291DA0ED00D4A988 /* AccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountScreen.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				1EAC4708290B307E002BD5DC /* Preview Content */,
 				1E0D951B291DA0F900D4A988 /* User.swift */,
 				1E4638D92947C49C00362B08 /* UserData.swift */,
+				171B37BC29493D5100E609AB /* ItemViewModel.swift */,
 				1E4638DB2947C4A400362B08 /* ViewModel.swift */,
 			);
 			path = StoreApp;
@@ -281,6 +284,7 @@
 				1E0D951C291DA0F900D4A988 /* User.swift in Sources */,
 				1E4638DC2947C4A400362B08 /* ViewModel.swift in Sources */,
 				1EAC4703290B307B002BD5DC /* StoreAppApp.swift in Sources */,
+				171B37BD29493D5100E609AB /* ItemViewModel.swift in Sources */,
 				D00AABF6291C729800D6F129 /* Item.swift in Sources */,
 				D00AAC1C291EF9F200D6F129 /* ShortsCategory.swift in Sources */,
 				D0D1494C2943B7D60048F7BA /* OrderView.swift in Sources */,
