@@ -137,7 +137,7 @@ struct ContentView: View {
             // checks if user is signed in and changes view to homescreen at open
             if viewModel.signedIn {
                 TabView {
-                    HomeScreen(screenName: "Home")
+                    HomeScreen(screenName: "Home", shirt:Item.example)
                         .tabItem {
                             Label("Home", systemImage: "house")
                         }
